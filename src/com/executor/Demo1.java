@@ -8,6 +8,7 @@ public class Demo1 {
     public static void main(String[] args) {
 
         ExecutorService ex = Executors.newFixedThreadPool(2);
+        System.out.println("Thread pool created with 2 threads");
         for(int i = 1; i <= 10; i++) {
             int taskId = i;
             ex.execute(
