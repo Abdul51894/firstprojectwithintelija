@@ -8,6 +8,7 @@ public class Demo1 {
     public static void main(String[] args) {
 
         ExecutorService ex = Executors.newFixedThreadPool(2);
+
         for(int i = 1; i <= 10; i++) {
             int taskId = i;
             ex.execute(
